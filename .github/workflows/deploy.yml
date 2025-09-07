@@ -1,9 +1,18 @@
-name: Deploy Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages + gh-pages branch (with cache)
 
 on:
   push:
-    branches:
-      - main   # 如果你的源码分支不是 main，这里改成实际分支名
+    branches: ["main"]   # 你的源码分支
+  workflow_dispatch:
+
+permissions:
+  contents: write        # ✅ 给 GITHUB_TOKEN 写权限，允许推送分支
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
