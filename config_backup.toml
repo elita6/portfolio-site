@@ -1,10 +1,9 @@
-baseURL = 'https://elita6.github.io/portfolio-site/'
-
+baseURL = 'https://elita6.github.io/portfolio-site/'  # 部署到 GitHub Pages 时改成你的实际网址
 languageCode = 'en-us'
 title = 'Elita Portfolio'
 theme = 'PaperMod'
 
-# 
+# 站点参数
 [params]
   defaultTheme = "auto" # auto, dark, light
   ShowReadingTime = true
@@ -16,7 +15,7 @@ theme = 'PaperMod'
   ShowRssButtonInSectionTermList = true
   ShowToc = true
 
-# 
+# 菜单
 [menu]
   [[menu.main]]
     identifier = "about"

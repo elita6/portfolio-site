@@ -1,5 +1,4 @@
-baseURL = 'https://elita6.github.io/portfolio-site/'
-
+baseURL = 'https://elita6.github.io/portfolio-site/'  #  GitHub Pages 
 languageCode = 'en-us'
 title = 'Elita Portfolio'
 theme = 'PaperMod'
